@@ -43,6 +43,8 @@ def playVideos():
         with open(startVideoFile, 'w') as file:
             file.write(video)
             file.flush()
+        #Note: Change the following values to match your display resolution. 
+        #If you don't want the video to be fullscreen remove <'--aspect', '3:2'> and if you want the video to be zoomed instead of warped replace with <--crop=3:2> (Replace <3:2> with correct aspect ratio)
         playProcess = Popen(['cvlc', '--width=480', '--height=320', '--aspect', '3:2', '--no-osd', video])
         playProcess.wait()
     with open(startVideoFile, 'w') as file:
