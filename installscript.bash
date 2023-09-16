@@ -11,6 +11,7 @@ apt-get install python
 
 mkdir /var/git
 git clone https://github.com/crabbymonkey/onepiecetv /var/git/onepiecetv
+chmod -R a+rw /var/git/onepiecetv
 
-touch /etc/systemd/system/tvbutton.service
-sudo nano /etc/systemd/system/tvbutton.service
+cp /var/git/tvbutton.service /etc/systemd/system/tvbutton.service
+cp /var/git/tvplayer.service /etc/systemd/system/tvplayer.service
