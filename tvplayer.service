@@ -1,0 +1,11 @@
+[Unit]
+Description=tvplayer
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/onepiecetv/
+ExecStart=/usr/bin/python /home/pi/onepiecetv/player.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
