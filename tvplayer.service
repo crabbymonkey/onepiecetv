@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/pi/onepiecetv/
-ExecStart=/usr/bin/python /home/pi/onepiecetv/player.py
+ExecStart=/usr/bin/python /var/git/onepiecetv/player.py
 Restart=always
 
 [Install]
