@@ -3,8 +3,8 @@ Description=tvbutton
 After=network.target
 
 [Service]
-WorkingDirectory=/home/pi/onepiecetv/
-ExecStart=/usr/bin/python /var/git/onepiecetv/buttons.py
+WorkingDirectory=/var/git/onepiecetv/
+ExecStart=/usr/bin/python3 /var/git/onepiecetv/buttons.py
 Restart=always
 
 [Install]
