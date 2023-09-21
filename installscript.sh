@@ -18,3 +18,5 @@ cp /var/git/tvplayer.service /etc/systemd/system/tvplayer.service
 
 systemctl enable tvbutton.service
 systemctl enable tvplayer.service
+
+shutdown -r now
