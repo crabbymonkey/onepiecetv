@@ -7,7 +7,7 @@ apt-get upgrade
 
 apt-get install vlc
 apt-get install git
-apt-get install python
+apt-get install python3
 
 mkdir /var/git
 git clone https://github.com/crabbymonkey/onepiecetv /var/git/onepiecetv
