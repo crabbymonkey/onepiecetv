@@ -3,7 +3,7 @@ Description=tvplayer
 After=network.target
 
 [Service]
-WorkingDirectory=/home/pi/onepiecetv/
+WorkingDirectory=/var/git/onepiecetv/
 ExecStart=/usr/bin/python /var/git/onepiecetv/player.py
 Restart=always
 
