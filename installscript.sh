@@ -15,3 +15,6 @@ chmod -R a+rw /var/git/onepiecetv
 
 cp /var/git/tvbutton.service /etc/systemd/system/tvbutton.service
 cp /var/git/tvplayer.service /etc/systemd/system/tvplayer.service
+
+systemctl enable tvbutton.service
+systemctl enable tvplayer.service
