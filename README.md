@@ -28,6 +28,7 @@ This script will do the following:
 4. Make sure that the OS sees the file as executable `sudo chmod u+x ./installscript.sh`.
 5. Run the script `sudo ./installscript.sh`.
 
+### After the Script
 After the Pi restarts your service should be running. Add any videos that you would like to have the device play in the `/var/git/onepiecetv/videos` directory, restart may be necessary. 
   
 > Note: To get this working with VLC I had to add the resolution and aspect ratio of the screen in the Python script. The default I have in the script is for [this screen](https://www.amazon.com/dp/B07H8ZY89H?psc=1&ref=ppx_yo2ov_dt_b_product_details) if your screen has different dimensions then 480X320 with an aspect ration of 3:2 then please open `/var/git/onepiecetv/player.py` and edit the file based on the comment in the file for your display. If anyone knows of a way to not need these hard coded values I would like to implement that.
