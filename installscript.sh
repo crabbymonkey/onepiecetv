@@ -9,6 +9,8 @@ apt-get install vlc
 apt-get install git
 apt-get install python3
 
+sed -i 's/geteuid/getppid/' /usr/bin/vlc
+
 mkdir /var/git
 git clone https://github.com/crabbymonkey/onepiecetv /var/git/onepiecetv
 chmod -R a+rw /var/git/onepiecetv
