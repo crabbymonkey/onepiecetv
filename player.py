@@ -32,7 +32,7 @@ def playVideos():
     global startVideo
     if len(videos) == 0:
         getVideos()
-        time.sleep(20)
+        time.sleep(5)
         return
     for video in videos:
         if startVideo != "":
